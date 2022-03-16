@@ -1,0 +1,469 @@
+@charset "utf-8";
+/* CSS Document */
+
+h5{
+	cursor: default;
+	color: white;
+}
+
+h5:hover{
+	font-size: 20pt;
+}
+
+h3{
+	cursor: default;
+	color: white;
+	animation-name: titulo;
+	animation-duration: 4s;
+}
+
+h3:hover{
+	font-size: 26pt;
+}
+
+h2{
+	cursor: default;
+	color: white;
+	animation-name: titulo;
+	animation-duration: 4s;
+}
+
+h2:hover{
+	font-size: 26pt;
+}
+
+#gmimg{
+	border-radius: 50%;
+}
+
+#divisao-nome{
+	width: 80%;
+	height: 1%;
+	background-color: aqua;
+	display: flex;
+	align-items: center;
+}
+
+.container img{
+	animation-name: img;
+	animation-duration: 4s;
+}
+
+.container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.pftext{
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.icon-info i{
+	color: skyblue;
+	margin-right: 10px;
+	font-size: 14pt;
+	animation-name: icon;
+	animation-duration: 3s;
+}
+
+.icon-info i:hover{
+	font-size: 22pt;
+}
+
+.text-info a{
+	color: white;
+}
+
+.contato ul{
+	position: relative;
+}
+
+.contato li:hover{
+	font-size: 13pt;
+}
+
+.contato ul li{
+	position: relative;
+	list-style: none;
+	cursor: default;
+}
+
+.education ul{
+	position: relative;
+}
+
+.education ul li{
+	position: relative;
+	list-style: none;
+	cursor: default;
+}
+
+.education-ano{
+	font-size: 11pt;
+	color: skyblue;
+}
+
+.education-ano:hover{
+	font-size: 14pt;
+}
+
+.education-text{
+	font-size: 12pt;
+}
+
+.languages ul{
+	position: relative;
+}
+
+.languages ul li{
+	position: relative;
+	list-style: none;
+	cursor: default;
+}
+
+.lang-percent{
+	position: relative;
+	width: 90%;
+	height: 6px;
+	background-color: #02283d;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.lang-percent div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: skyblue;
+}
+
+.lang-percent:hover{
+	height: 20px;
+}
+
+.sobre{
+	margin: 50px;
+}
+
+.sobre h2{
+	text-transform: uppercase;
+	color: #063e58;
+}
+
+.text-sobre{
+	margin-bottom: 50px;
+}
+
+.sobre .box{
+	display: flex;
+	flex-direction: row;
+	margin: 40px 0;
+}
+
+.sobre .box .exp-ano{
+	min-width: 200px;
+	text-transform: uppercase;
+	color: #848c90;
+}
+
+.skills ul{
+	position: relative;
+}
+
+.skills ul li{
+	position: relative;
+	list-style: none;
+	cursor: default;
+	margin-top: 10px;
+}
+
+.skill-percent{
+	position: relative;
+	width: 100%;
+	height: 13px;
+	background-color: #02283d;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	animation-name: percent;
+	animation-duration: 3s;
+}
+
+.skill-percent div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: skyblue;
+}
+
+.skill-text{
+	text-transform: uppercase;
+	color: #848c90;
+	font-size: 13pt;
+}
+
+.skill-text:hover{
+	font-size: 22pt;
+	color: #063e58;
+}
+
+.interesse ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.interesse li{
+	margin: auto;
+}
+
+.interesse i{
+	margin-right: 10px;
+	color: #063e58;
+	font-size: 14pt;
+}
+
+.interesse li:hover{
+	font-size: 18pt;
+	cursor: default;
+}
+
+.interesse i:hover{
+	cursor: default;
+	color: skyblue;
+}
+
+@media (max-width: 1200px){
+	.part1{
+		width: 100%;
+	}
+	.part2{
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px){
+	.part1{
+		width: 100%;
+	}
+	.container{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.sobre .box{
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+	.sobre .box .exp-ano{
+		width: 0px;
+	}
+	.interesse ul{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	}
+	.interesse li{
+		margin-top: 10px;
+		margin-left: -20px;
+	}
+	.box-area {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 1200px !important;
+		overflow: hidden;
+	}
+}
+
+@keyframes icon {
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.2);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+@keyframes percent{
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	
+}
+
+@keyframes img{
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	55%{
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+@keyframes titulo{
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	55%{
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+/* Animação de fundo 1 */
+
+.animation-area {
+	background: linear-gradient(to left, #063e58, #cde3f5);
+	width: 100%;
+	height: 100%;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 950px;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+/* Animação de fundo 2 */
+
+.box-area2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1650px;
+	overflow: hidden;
+}
+.box-area2 li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area2 li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area2 li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area2 li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area2 li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area2 li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area2 li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
